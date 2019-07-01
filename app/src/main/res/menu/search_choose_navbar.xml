@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search_event_switcher"
+        android:title="Search Event"
+        android:icon="@drawable/ic_dashboard_black_24dp"/>
+
+    <item
+        android:id="@+id/search_team_switcher"
+        android:title="Search Teams"
+        android:icon="@drawable/ic_dashboard_black_24dp"/>
+</menu>

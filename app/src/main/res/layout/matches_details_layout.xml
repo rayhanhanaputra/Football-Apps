@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".MatchesDetailsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/scroll_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:id="@+id/linear_main">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/match_details_time_schedule_text"
+                    android:textSize="16sp"
+                    android:paddingBottom="12dp"
+                    android:id="@+id/tanggal_main"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:contentDescription="@string/team_logo_text"
+                            android:layout_height="75dp"
+                            android:id="@+id/logo_home"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/team_home_match_details_text"
+                            android:textSize="18sp"
+                            android:paddingTop="16dp"
+                            android:textAlignment="center"
+                            android:id="@+id/tim_kandang"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingTop="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/score_home_match_details_layout_text"
+                            android:textAlignment="center"
+                            android:id="@+id/score_kandang"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vs_matches_details_text"
+                            android:textSize="14sp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scoreaway_matches_details_text"
+                            android:textAlignment="center"
+                            android:id="@+id/score_lawan"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:contentDescription="@string/team_logo_text"
+                            android:layout_height="75dp"
+                            android:id="@+id/logo_away"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/team_away_match_details_text"
+                            android:paddingTop="16dp"
+                            android:textAlignment="center"
+                            android:id="@+id/tim_lawan"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--Batas LinearLayout Pertama -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:baselineAligned="false"
+                android:paddingBottom="16dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:layout_weight="40">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/example_player_scorer_match_details_text"
+                        android:id="@+id/home_scorer"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scorer_text"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:layout_weight="40">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/away_scorer_example_text"
+                        android:id="@+id/away_scorer"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Batas LinearLayout Kedua -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

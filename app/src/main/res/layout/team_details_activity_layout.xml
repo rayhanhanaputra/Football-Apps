@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/team_parents"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/team_header_detail"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:contentDescription="@string/team_logo_text"
+            android:layout_height="100dp"
+            android:id="@+id/team_logo_details"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/team_name_fc_example_text"
+            android:padding="2dp"
+            android:id="@+id/team_name_details"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/formed_years_dummy_text"
+            android:padding="2dp"
+            android:id="@+id/team_year_details"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stadion_dummy_text"
+            android:id="@+id/team_stadion_details"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_player_list_team_details_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/team_navigation"
+        app:layout_constraintEnd_toEndOf="@+id/team_parents"
+        app:layout_constraintStart_toStartOf="@+id/team_parents"
+        app:layout_constraintTop_toBottomOf="@id/team_header_detail" />
+
+    <ScrollView
+        android:id="@+id/scrollview_overview_team_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/team_navigation"
+        app:layout_constraintTop_toBottomOf="@id/team_header_detail">
+
+        <TextView
+            android:id="@+id/overview_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:text="@string/team_detail_overview_dummy_text" />
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/team_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/team_navigation" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/matches_previous_match"
+        android:title="@string/previous_matches_navigation"
+        android:icon="@drawable/ic_notifications_black_24dp"/>
+
+    <item
+        android:id="@+id/matches_next_match"
+        android:title="@string/next_matches_navigation"
+        android:icon="@drawable/ic_notifications_black_24dp"/>
+
+
+</menu>

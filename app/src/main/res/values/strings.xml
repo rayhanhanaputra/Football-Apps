@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Football App</string>
+    <string name="navbar_matches">Matches</string>
+    <string name="navbar_teams">Teams</string>
+    <string name="navbar_favorites">Favorites</string>
+    <string name="previous_matches_navigation">Previous Matches</string>
+    <string name="next_matches_navigation">Next Matches</string>
+    <string name="previous_time_scheduie">Time Schedule</string>
+    <string name="previous_match_home_team">Team 1</string>
+    <string name="previous_match_home_score">0</string>
+    <string name="previous_match_vs">vs</string>
+    <string name="previous_match_away_score">0</string>
+    <string name="previous_match_away_team">Team 2</string>
+    <string name="next_match_time_schedule">Time Schedule</string>
+    <string name="next_match_home_team">Team 1</string>
+    <string name="next_match_vs">vs</string>
+    <string name="next_match_away_team">Team 2</string>
+    <string name="team_overview_string">Overview</string>
+    <string name="team_players_string">Players</string>
+    <string name="formed_years_dummy_text">1898</string>
+    <string name="stadion_dummy_text">Stadion Manasaja</string>
+    <string name="team_detail_overview_dummy_text">dolsaorskgfasdgadgadgadgdadgdgadgdolsaorskdolsaorskgfasdgadgadgadgdadgdgadggfasdgadgadgadgdadgdgadg</string>
+    <string name="position_dummy_text">Midlanner</string>
+    <string name="player_name_dummy_text">Luiz David</string>
+    <string name="player_height_dummy_text">1.78 m</string>
+    <string name="player_weight_dummy_text">69 kg</string>
+    <string name="player_thumbnail_dummy_text">Player Thumbnail</string>
+    <string name="matches_nav_text">Matches</string>
+    <string name="teams_nav_text">Teams</string>
+    <string name="match_details_time_schedule_text">Time Schedule</string>
+    <string name="team_home_match_details_text">Team 1</string>
+    <string name="score_home_match_details_layout_text">0</string>
+    <string name="vs_matches_details_text">vs</string>
+    <string name="scoreaway_matches_details_text">0</string>
+    <string name="team_away_match_details_text">Team 2</string>
+    <string name="example_player_scorer_match_details_text">ronaldo(97\')</string>
+    <string name="scorer_text">Scorers</string>
+    <string name="away_scorer_example_text">messi (05\')</string>
+    <string name="team_logo_text">Team\'s Logo</string>
+    <string name="height_text">Height (m)</string>
+    <string name="weight_text">Weight (kg)</string>
+    <string name="team_name_fc_example_text">Team FC</string>
+    <string name="team_name_example_text_list">hello world FC</string>
+    <string name="search_string">search...</string>
+    <string name="date_unknown">Date Unknown</string>
+
+    <array name="league">
+        <item>English Premier League</item> //4328
+        <item>English League Championship</item> //4329
+        <item>German Bundesliga</item> //4331
+        <item>Italian Serie A</item> //4332
+        <item>French Ligue 1</item> //4334
+        <item>Spanish La Liga</item> //4335
+    </array>
+
+    <array name="favorite">
+        <item>Matches</item>
+        <item>Teams</item>
+    </array>
+</resources>
