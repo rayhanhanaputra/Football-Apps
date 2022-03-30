@@ -2,25 +2,25 @@ package com.example.android.footballapp.api
 
 object TheSportDBApi {
     fun searchTeam(teamName: String?): String{
-        return "https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=$teamName"
+        return "https://www.thesportsdb.com/api/v1/json/2/searchteams.php?t=$teamName"
     }
     fun searchEvent(strEvent: String?): String{
-        return "https://www.thesportsdb.com/api/v1/json/1/searchevents.php?e=$strEvent"
+        return "https://www.thesportsdb.com/api/v1/json/2/searchevents.php?e=$strEvent"
     }
     fun getMatchPast(id: String?): String {
-        return "https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=$id"
+        return "https://www.thesportsdb.com/api/v1/json/2/eventspastleague.php?id=$id"
     }
     fun getMatchNext(id: String?): String {
-        return "https://www.thesportsdb.com/api/v1/json/1/eventsnextleague.php?id=$id"
+        return "https://www.thesportsdb.com/api/v1/json/2/eventsnextleague.php?id=$id"
     }
     fun getTeamDetail(teamId: String?): String{
-        return "https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=$teamId"
+        return "https://www.thesportsdb.com/api/v1/json/2/lookupteam.php?id=$teamId"
     }
     fun getTeamList(leagueString: String?): String{
-        return "https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=$leagueString"
+        return "https://www.thesportsdb.com/api/v1/json/2/search_all_teams.php?l=$leagueString"
     }
     fun getTeamPlayerList(teamId: String?): String{
-        return "https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=$teamId"
+        return "https://www.thesportsdb.com/api/v1/json/2/lookup_all_players.php?id=$teamId"
     }
     fun getLeagueId(teamLeague: String?): Int{
         return when(teamLeague){

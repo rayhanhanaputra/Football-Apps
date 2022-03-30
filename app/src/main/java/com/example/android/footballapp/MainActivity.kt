@@ -4,11 +4,11 @@ import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.design.widget.TabLayout
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.SearchView
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.tabs.TabLayout
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.widget.SearchView
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity(){
 
     private lateinit var adapterFavoriteTeams: FavoriteTeamAdapter
     private var favoriteTeam: MutableList<FavoriteTeam> = mutableListOf()
+
+    private lateinit var adapterPrevMatch: PreviousMatchAdapter
 
     private var searchData: Boolean = false
     private lateinit var searchButton: MenuItem
@@ -118,6 +120,7 @@ class MainActivity : AppCompatActivity(){
         upperToolbar.visibility = View.GONE
 
         recyclerView_previous_match.layoutManager = LinearLayoutManager(this)
+//        recyclerView_previous_match.adapter = adapterPrevMatch
         recyclerView_next_match.layoutManager = LinearLayoutManager(this)
         recyclerView_teams_list.layoutManager = LinearLayoutManager(this)
         recyclerView_favorite_matches.layoutManager = LinearLayoutManager(this)
@@ -242,7 +245,6 @@ class MainActivity : AppCompatActivity(){
 
     private fun fetchJson(apiRepository: ApiRepository){
         val id = getLeagueId(league_spinner.selectedItem.toString()).toString()
-        println(id)
         val leagueName = getLeagueString(league_spinner.selectedItem.toString())
         val request = Request.Builder().url(getMatchPast(id)).build()
         val request2 = Request.Builder().url(getMatchNext(id)).build()
@@ -255,7 +257,10 @@ class MainActivity : AppCompatActivity(){
                 val prevMatch = gson.fromJson(apiRepository
                         .doRequest(TheSportDBApi.getMatchPast(id)),
                         PrevMatch::class.java)
-                runOnUiThread { recyclerView_previous_match.adapter = PreviousMatchAdapter(prevMatch) }
+
+                runOnUiThread {
+                    recyclerView_previous_match.adapter = PreviousMatchAdapter(prevMatch)
+                }
             }
             override fun onFailure(call: Call?, e: IOException?){
                 println("failed request")

@@ -2,8 +2,8 @@ package com.example.android.footballapp
 
 import android.database.sqlite.SQLiteConstraintException
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.example.android.footballapp.R.drawable.ic_add_to_favorite
@@ -12,6 +12,7 @@ import com.example.android.footballapp.R.menu.favorite_menu
 import com.example.android.footballapp.api.ApiRepository
 import com.example.android.footballapp.api.TheSportDBApi
 import com.example.android.footballapp.api.TheSportDBApi.getTeamDetail
+import com.google.android.material.snackbar.Snackbar
 import com.google.gson.GsonBuilder
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.matches_details_layout.*
@@ -20,7 +21,6 @@ import org.jetbrains.anko.db.classParser
 import org.jetbrains.anko.db.delete
 import org.jetbrains.anko.db.insert
 import org.jetbrains.anko.db.select
-import org.jetbrains.anko.design.snackbar
 import java.io.IOException
 
 class MatchesDetailsActivity : AppCompatActivity() {
@@ -29,16 +29,16 @@ class MatchesDetailsActivity : AppCompatActivity() {
     private var isFavorite: Boolean = false
 
     private var idEvent:Int = 0
-    private lateinit var nameTeamHome: String
-    private lateinit var nameTeamAway: String
-    private lateinit var eventName: String
-    private lateinit var dateTime: String
-    private lateinit var homeGoalDetails: String
-    private lateinit var awayGoalDetails: String
-    private lateinit var homeScore: String
-    private lateinit var awayScore: String
-    private lateinit var idHome: String
-    private lateinit var idAway: String
+    private var nameTeamHome: String? = null
+    private var nameTeamAway: String? = null
+    private var eventName: String? = null
+    private var dateTime: String? = null
+    private var homeGoalDetails: String? = null
+    private var awayGoalDetails: String? = null
+    private var homeScore: String? = null
+    private var awayScore: String? = null
+    private var idHome: String? = null
+    private var idAway: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +54,7 @@ class MatchesDetailsActivity : AppCompatActivity() {
         dateTime = intent.getStringExtra("dateTime")
         homeGoalDetails = intent.getStringExtra("homeGoalDetail")
         awayGoalDetails = intent.getStringExtra("awayGoalDetail")
-        idEvent = intent.getStringExtra("idEvent").toInt()
+        idEvent = intent.getStringExtra("idEvent")!!.toInt()
         idHome = intent.getStringExtra("idHome")
         idAway = intent.getStringExtra("idAway")
 
@@ -126,9 +126,9 @@ class MatchesDetailsActivity : AppCompatActivity() {
                         FavoriteEvent.EVENT_ID_HOME to idHome,
                         FavoriteEvent.EVENT_ID_AWAY to idAway)
             }
-            snackbar(coordinatorLayout, "Added to favorite").show()
+            Snackbar.make(coordinatorLayout, "Added to favorite", Snackbar.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException){
-            snackbar(coordinatorLayout, e.localizedMessage).show()
+            Snackbar.make(coordinatorLayout, e.localizedMessage, Snackbar.LENGTH_SHORT).show()
         }
     }
 
@@ -138,9 +138,9 @@ class MatchesDetailsActivity : AppCompatActivity() {
                 this.delete(FavoriteEvent.TABLE_FAVORITE_EVENT, FavoriteEvent.EVENT_ID + " = {idEvent}",
                         "idEvent" to idEvent)
             }
-            snackbar(coordinatorLayout, "Removed from favorite").show()
+            Snackbar.make(coordinatorLayout, "Removed from favorite", Snackbar.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException){
-            snackbar(coordinatorLayout, e.localizedMessage).show()
+            Snackbar.make(coordinatorLayout, e.localizedMessage, Snackbar.LENGTH_SHORT).show()
         }
     }
 

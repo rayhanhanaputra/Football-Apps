@@ -2,18 +2,20 @@ package com.example.android.footballapp
 
 import android.database.sqlite.SQLiteConstraintException
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.example.android.footballapp.adapter.PlayerListAdapter
 import com.example.android.footballapp.api.ApiRepository
 import com.example.android.footballapp.api.TheSportDBApi
+import com.google.android.material.snackbar.Snackbar
 import com.google.gson.GsonBuilder
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.matches_details_layout.*
 import kotlinx.android.synthetic.main.team_details_activity_layout.*
 import okhttp3.*
 import org.jetbrains.anko.db.classParser
@@ -29,11 +31,11 @@ class TeamsDetailsActivity : AppCompatActivity() {
     private var isFavorite: Boolean = false
     private var idTeam:Int = 0
 
-    private lateinit var strTeam: String
-    private lateinit var strTeamBadge: String
-    private lateinit var intFormedYear: String
-    private lateinit var strStadium: String
-    private lateinit var strDescriptionEN: String
+    private var strTeam: String? = null
+    private var strTeamBadge: String? = null
+    private var intFormedYear: String? = null
+    private var strStadium: String? = null
+    private var strDescriptionEN: String? = null
 
     private val teamOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -61,7 +63,7 @@ class TeamsDetailsActivity : AppCompatActivity() {
         intFormedYear = intent.getStringExtra("intFormedYearTeam")
         strStadium = intent.getStringExtra("strStadium")
         strDescriptionEN = intent.getStringExtra("strDescription")
-        idTeam = intent.getStringExtra("idTeamClicked").toInt()
+        idTeam = intent.getStringExtra("idTeamClicked")!!.toInt()
 
         favoriteState()
 
@@ -120,9 +122,9 @@ class TeamsDetailsActivity : AppCompatActivity() {
                         FavoriteTeam.TEAM_STADIUM to strStadium,
                         FavoriteTeam.TEAM_DESCRIPTION to strDescriptionEN)
             }
-            snackbar(team_parents, "Added to favorite").show()
+            Snackbar.make(coordinatorLayout, "Added to favorite", Snackbar.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException){
-            snackbar(team_parents, e.localizedMessage).show()
+            Snackbar.make(coordinatorLayout, e.localizedMessage, Snackbar.LENGTH_SHORT).show()
         }
     }
 
@@ -132,9 +134,9 @@ class TeamsDetailsActivity : AppCompatActivity() {
                 this.delete(FavoriteTeam.TABLE_FAVORITE_TEAM, FavoriteTeam.TEAM_ID + " = {idTeam}",
                         "idTeam" to idTeam)
             }
-            snackbar(team_parents, "Removed from favorite").show()
+            Snackbar.make(coordinatorLayout, "Removed from favorite", Snackbar.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException){
-            snackbar(team_parents, e.localizedMessage).show()
+            Snackbar.make(coordinatorLayout, e.localizedMessage, Snackbar.LENGTH_SHORT).show()
         }
     }
 
