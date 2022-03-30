@@ -1,0 +1,252 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7f5456ad0fc083bdc0f4759904b270fb\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\387e4ab06bf912cb5cf5f68826a420ee\transformed\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2ce269f4ab770f98df928f65057493cb\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rayhan\.gradle\caches\transforms-3\1d55153180c924d427ee05d2ef4de030\transformed\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\a2b0a20a0d6cc79c7603c77f7904f822\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\29df51de7517998b975aebc2219e1ce6\transformed\vectordrawable-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1521ca0dddf17f62acfc7cd8469d547d\transformed\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2e8ed5104fe033ffa2862606eb1105f9\transformed\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3c4f17ecd72583b3a6b7733a292b3a92\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\0bcaf791ff50993e77c8308306818b83\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\ef1c4f5e05b2ea53057585423c92c3d0\transformed\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\e8d78942842e4749837a1f33ca3e068b\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\8c86d60e31ecc9b8c6036e7feee09a6a\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2dcf6b384611e944bd28754be943733e\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\cef42131e7a9fafdeb0efe3d7363ddd9\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\a9c2383bb2ce806ea57367759d1e6a43\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\41f1d0ee642e56274fd369eed5d6ed1b\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\69dc0a67378ab50538a5a3a6c3578035\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\4f2a58b881e0c15ec73f4ec2d80d6674\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3cbba00d19ad066040270cd8ec04437f\transformed\core-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\5217b7623e72b3362d6cb237a58303ea\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\af11966b09b302805e3cf6788f225a1d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\e50543719087e4e0d9eed540cacbdf66\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1a8121571e86e0ea2fee76d84b1cc3f5\transformed\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1fc11c2023e1af6b505dff2498a00c20\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\46197eece4813ea272dedaf6d97f0704\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\bf11d5f709f8b4982d65ae78eb7a0a6a\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7b47d9e0731e04e829a8275a81661884\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\69a4388af68bad3cfd5a877ec530d9c8\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3975aa665502506a868be148aa96357f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\b670cdbf09edbdc78337f29f62cf8b98\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\18bb978f268dc48bab0afad2345da5ff\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+	package
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:1-58:12
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:7:5-56:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7f5456ad0fc083bdc0f4759904b270fb\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7f5456ad0fc083bdc0f4759904b270fb\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rayhan\.gradle\caches\transforms-3\1d55153180c924d427ee05d2ef4de030\transformed\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rayhan\.gradle\caches\transforms-3\1d55153180c924d427ee05d2ef4de030\transformed\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3cbba00d19ad066040270cd8ec04437f\transformed\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3cbba00d19ad066040270cd8ec04437f\transformed\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\5217b7623e72b3362d6cb237a58303ea\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\5217b7623e72b3362d6cb237a58303ea\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3cbba00d19ad066040270cd8ec04437f\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:13:9-40
+meta-data#android.app.default_searchable
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:14:9-107
+	android:value
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:14:66-104
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:14:20-65
+activity#com.example.android.footballapp.MainActivity
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:15:9-23:20
+	android:label
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:17:13-45
+	android:launchMode
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:18:13-43
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:21:27-74
+activity#com.example.android.footballapp.SearchResultsActivity
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:24:9-37:20
+	android:label
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:25:13-43
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:24:19-56
+intent-filter#action:name:android.intent.action.SEARCH
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:26:13-28:29
+action#android.intent.action.SEARCH
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:27:17-71
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:27:25-68
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:29:13-31:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:30:25-66
+meta-data#android.app.searchable
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:32:13-34:54
+	android:resource
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:34:17-51
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:33:17-54
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:35:13-36:48
+	android:value
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:36:17-46
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:35:24-70
+activity#com.example.android.footballapp.MatchesDetailsActivity
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:38:9-43:20
+	android:label
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:39:13-41
+	android:launchMode
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:40:13-43
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:38:19-57
+activity#com.example.android.footballapp.TeamsDetailsActivity
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:44:9-49:20
+	android:label
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:45:13-41
+	android:launchMode
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:46:13-43
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:44:19-55
+activity#com.example.android.footballapp.PlayerDetailsActivity
+ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:50:9-55:20
+	android:label
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:51:13-43
+	android:launchMode
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:52:13-43
+	android:name
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml:50:19-56
+uses-sdk
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7f5456ad0fc083bdc0f4759904b270fb\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7f5456ad0fc083bdc0f4759904b270fb\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\387e4ab06bf912cb5cf5f68826a420ee\transformed\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\387e4ab06bf912cb5cf5f68826a420ee\transformed\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2ce269f4ab770f98df928f65057493cb\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2ce269f4ab770f98df928f65057493cb\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rayhan\.gradle\caches\transforms-3\1d55153180c924d427ee05d2ef4de030\transformed\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rayhan\.gradle\caches\transforms-3\1d55153180c924d427ee05d2ef4de030\transformed\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\a2b0a20a0d6cc79c7603c77f7904f822\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\a2b0a20a0d6cc79c7603c77f7904f822\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\29df51de7517998b975aebc2219e1ce6\transformed\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\29df51de7517998b975aebc2219e1ce6\transformed\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1521ca0dddf17f62acfc7cd8469d547d\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1521ca0dddf17f62acfc7cd8469d547d\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2e8ed5104fe033ffa2862606eb1105f9\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2e8ed5104fe033ffa2862606eb1105f9\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3c4f17ecd72583b3a6b7733a292b3a92\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3c4f17ecd72583b3a6b7733a292b3a92\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\0bcaf791ff50993e77c8308306818b83\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\0bcaf791ff50993e77c8308306818b83\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\ef1c4f5e05b2ea53057585423c92c3d0\transformed\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\ef1c4f5e05b2ea53057585423c92c3d0\transformed\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\e8d78942842e4749837a1f33ca3e068b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\e8d78942842e4749837a1f33ca3e068b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\8c86d60e31ecc9b8c6036e7feee09a6a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\8c86d60e31ecc9b8c6036e7feee09a6a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2dcf6b384611e944bd28754be943733e\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\2dcf6b384611e944bd28754be943733e\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\cef42131e7a9fafdeb0efe3d7363ddd9\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\cef42131e7a9fafdeb0efe3d7363ddd9\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\a9c2383bb2ce806ea57367759d1e6a43\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\a9c2383bb2ce806ea57367759d1e6a43\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\41f1d0ee642e56274fd369eed5d6ed1b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\41f1d0ee642e56274fd369eed5d6ed1b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\69dc0a67378ab50538a5a3a6c3578035\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\69dc0a67378ab50538a5a3a6c3578035\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\4f2a58b881e0c15ec73f4ec2d80d6674\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\4f2a58b881e0c15ec73f4ec2d80d6674\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3cbba00d19ad066040270cd8ec04437f\transformed\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3cbba00d19ad066040270cd8ec04437f\transformed\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\5217b7623e72b3362d6cb237a58303ea\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\5217b7623e72b3362d6cb237a58303ea\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\af11966b09b302805e3cf6788f225a1d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\af11966b09b302805e3cf6788f225a1d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\e50543719087e4e0d9eed540cacbdf66\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\e50543719087e4e0d9eed540cacbdf66\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1a8121571e86e0ea2fee76d84b1cc3f5\transformed\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1a8121571e86e0ea2fee76d84b1cc3f5\transformed\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1fc11c2023e1af6b505dff2498a00c20\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\1fc11c2023e1af6b505dff2498a00c20\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\46197eece4813ea272dedaf6d97f0704\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\46197eece4813ea272dedaf6d97f0704\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\bf11d5f709f8b4982d65ae78eb7a0a6a\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\bf11d5f709f8b4982d65ae78eb7a0a6a\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7b47d9e0731e04e829a8275a81661884\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\7b47d9e0731e04e829a8275a81661884\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\69a4388af68bad3cfd5a877ec530d9c8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\69a4388af68bad3cfd5a877ec530d9c8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3975aa665502506a868be148aa96357f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\3975aa665502506a868be148aa96357f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\b670cdbf09edbdc78337f29f62cf8b98\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\b670cdbf09edbdc78337f29f62cf8b98\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\18bb978f268dc48bab0afad2345da5ff\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\rayhan\.gradle\caches\transforms-3\18bb978f268dc48bab0afad2345da5ff\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rayhan\StudioProjects\Football-Apps\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\rayhan\.gradle\caches\transforms-3\1a3fc9b890a6f8120783300a40917ec8\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
