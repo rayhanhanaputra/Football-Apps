@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/team_parents"
@@ -12,7 +13,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="12dp"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="100dp"
@@ -28,7 +30,8 @@
             android:id="@+id/team_name_details"
             android:textSize="20sp"
             android:textAlignment="center"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:layout_width="match_parent"
@@ -37,7 +40,8 @@
             android:padding="2dp"
             android:id="@+id/team_year_details"
             android:textAlignment="center"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:layout_width="match_parent"
@@ -45,7 +49,8 @@
             android:text="@string/stadion_dummy_text"
             android:id="@+id/team_stadion_details"
             android:textAlignment="center"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:layout_width="match_parent"
@@ -89,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
+        android:visibility="gone"
         android:background="?android:attr/windowBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

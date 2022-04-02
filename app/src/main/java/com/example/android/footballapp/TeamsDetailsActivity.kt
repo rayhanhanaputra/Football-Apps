@@ -1,5 +1,6 @@
 package com.example.android.footballapp
 
+import android.app.Activity
 import android.database.sqlite.SQLiteConstraintException
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -15,6 +16,7 @@ import com.example.android.footballapp.api.TheSportDBApi
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.GsonBuilder
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.matches_details_layout.*
 import kotlinx.android.synthetic.main.team_details_activity_layout.*
 import okhttp3.*
@@ -122,9 +124,9 @@ class TeamsDetailsActivity : AppCompatActivity() {
                         FavoriteTeam.TEAM_STADIUM to strStadium,
                         FavoriteTeam.TEAM_DESCRIPTION to strDescriptionEN)
             }
-            Snackbar.make(coordinatorLayout, "Added to favorite", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(getWindow().getDecorView(), "Added to favorite", Snackbar.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException){
-            Snackbar.make(coordinatorLayout, e.localizedMessage, Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(getWindow().getDecorView(), e.localizedMessage, Snackbar.LENGTH_SHORT).show()
         }
     }
 
@@ -134,9 +136,9 @@ class TeamsDetailsActivity : AppCompatActivity() {
                 this.delete(FavoriteTeam.TABLE_FAVORITE_TEAM, FavoriteTeam.TEAM_ID + " = {idTeam}",
                         "idTeam" to idTeam)
             }
-            Snackbar.make(coordinatorLayout, "Removed from favorite", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(getWindow().getDecorView(), "Removed from favorite", Snackbar.LENGTH_SHORT).show()
         } catch (e: SQLiteConstraintException){
-            Snackbar.make(coordinatorLayout, e.localizedMessage, Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(getWindow().getDecorView(), e.localizedMessage, Snackbar.LENGTH_SHORT).show()
         }
     }
 

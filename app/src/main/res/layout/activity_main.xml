@@ -17,6 +17,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/favorite_navigation_switch"
@@ -24,6 +25,7 @@
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
+            android:visibility="gone"
             android:layout_height="wrap_content"
             android:text="@string/matches_nav_text"
             android:id="@+id/favorite_matches_switcher"/>
@@ -31,6 +33,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/teams_nav_text"
             android:id="@+id/favorite_team_switcher"/>
 
@@ -43,6 +46,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:visibility="gone"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,17 +54,19 @@
         android:id="@+id/matches_navigation"
         app:tabIndicatorColor="@color/colorPrimaryDark">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/previous_matches_navigation"
-            android:id="@+id/matches_previous_match"/>
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            android:text="@string/previous_matches_navigation"-->
+<!--            android:id="@+id/matches_previous_match"/>-->
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/next_matches_navigation"
-            android:id="@+id/matches_next_match"/>
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            android:text="@string/next_matches_navigation"-->
+<!--            android:id="@+id/matches_next_match"/>-->
 
     </com.google.android.material.tabs.TabLayout>
 
@@ -68,10 +74,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:id="@+id/upperToolbar"/>
+        android:visibility="gone"
+        android:id="@+id/upperToolbar"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/view"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#1F000000"
@@ -86,7 +95,7 @@
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         android:paddingBottom="60dp"
-        android:paddingTop="60dp"
+        android:paddingTop="0dp"
         app:layout_constraintBottom_toTopOf="@id/navigation"
         app:layout_constraintTop_toBottomOf="@id/container"
         app:layout_constraintVertical_bias="0.109">

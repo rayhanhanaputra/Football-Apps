@@ -4,6 +4,7 @@ import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayout
 import androidx.appcompat.app.AppCompatActivity
@@ -42,21 +43,21 @@ class MainActivity : AppCompatActivity(){
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_matches -> {
-                upperToolbar.visibility = View.GONE
-                recyclerView_previous_match.visibility = View.VISIBLE
-                recyclerView_next_match.visibility = View.GONE
-                recyclerView_teams_list.visibility = View.GONE
-                matches_navigation.visibility = View.VISIBLE
-                league_spinner.visibility = View.VISIBLE
-                favorite_navigation_switch.visibility = View.GONE
-                layout_favorite.visibility = View.GONE
-                searchButton.setVisible(true)
-                searchData = false
-                return@OnNavigationItemSelectedListener true
-            }
+//            R.id.navigation_matches -> {
+//                upperToolbar.visibility = View.GONE
+//                recyclerView_previous_match.visibility = View.VISIBLE
+//                recyclerView_next_match.visibility = View.GONE
+//                recyclerView_teams_list.visibility = View.GONE
+//                matches_navigation.visibility = View.VISIBLE
+//                league_spinner.visibility = View.VISIBLE
+//                favorite_navigation_switch.visibility = View.GONE
+//                layout_favorite.visibility = View.GONE
+//                searchButton.setVisible(true)
+//                searchData = false
+//                return@OnNavigationItemSelectedListener true
+//            }
             R.id.navigation_teams -> {
-                upperToolbar.visibility = View.VISIBLE
+                upperToolbar.visibility = View.GONE
                 recyclerView_previous_match.visibility = View.GONE
                 recyclerView_next_match.visibility = View.GONE
                 recyclerView_teams_list.visibility = View.VISIBLE
@@ -75,10 +76,10 @@ class MainActivity : AppCompatActivity(){
                 recyclerView_teams_list.visibility = View.GONE
                 matches_navigation.visibility = View.GONE
                 league_spinner.visibility = View.GONE
-                favorite_navigation_switch.visibility = View.VISIBLE
+                favorite_navigation_switch.visibility = View.GONE
                 layout_favorite.visibility = View.VISIBLE
-                recyclerView_favorite_matches.visibility = View.VISIBLE
-                recyclerView_favorite_teams.visibility = View.GONE
+                recyclerView_favorite_matches.visibility = View.GONE
+                recyclerView_favorite_teams.visibility = View.VISIBLE
                 showFavorite()
                 searchButton.setVisible(false)
                 return@OnNavigationItemSelectedListener true
@@ -119,16 +120,15 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
         upperToolbar.visibility = View.GONE
 
-        recyclerView_previous_match.layoutManager = LinearLayoutManager(this)
-//        recyclerView_previous_match.adapter = adapterPrevMatch
-        recyclerView_next_match.layoutManager = LinearLayoutManager(this)
+//        recyclerView_previous_match.layoutManager = LinearLayoutManager(this)
+//        recyclerView_next_match.layoutManager = LinearLayoutManager(this)
         recyclerView_teams_list.layoutManager = LinearLayoutManager(this)
-        recyclerView_favorite_matches.layoutManager = LinearLayoutManager(this)
+//        recyclerView_favorite_matches.layoutManager = LinearLayoutManager(this)
         recyclerView_favorite_teams.layoutManager = LinearLayoutManager(this)
 
-        recyclerView_previous_match.visibility = View.VISIBLE
+        recyclerView_previous_match.visibility = View.GONE
         recyclerView_next_match.visibility = View.GONE
-        recyclerView_teams_list.visibility = View.GONE
+        recyclerView_teams_list.visibility = View.VISIBLE
         recyclerView_favorite_matches.visibility = View.GONE
         recyclerView_favorite_teams.visibility = View.GONE
         layout_favorite.visibility = View.GONE
@@ -155,84 +155,84 @@ class MainActivity : AppCompatActivity(){
 
         showFavorite()
 
-        matches_navigation.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                when (matches_navigation.selectedTabPosition) {
-                    0 -> {
-                        recyclerView_previous_match.visibility = View.VISIBLE
-                        recyclerView_next_match.visibility = View.GONE
-                        fetchJson(ApiRepository())
-                    }
-                    1 -> {
-                        recyclerView_previous_match.visibility = View.GONE
-                        recyclerView_next_match.visibility = View.VISIBLE
-                        fetchJson(ApiRepository())
-                    }
-                }
-            }
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-
-            }
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-                when (matches_navigation.selectedTabPosition) {
-                    0 -> {
-                        recyclerView_previous_match.visibility = View.VISIBLE
-                        recyclerView_next_match.visibility = View.GONE
-                        fetchJson(ApiRepository())
-                    }
-                    1 -> {
-                        recyclerView_previous_match.visibility = View.GONE
-                        recyclerView_next_match.visibility = View.VISIBLE
-                        fetchJson(ApiRepository())
-                    }
-                }
-            }
-        })
-        favorite_navigation_switch.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                when (favorite_navigation_switch.selectedTabPosition) {
-                    0 -> {
-                        recyclerView_favorite_matches.visibility = View.VISIBLE
-                        recyclerView_favorite_teams.visibility = View.GONE
-                        showFavorite()
-                    }
-                    1 -> {
-                        recyclerView_favorite_matches.visibility = View.GONE
-                        recyclerView_favorite_teams.visibility = View.VISIBLE
-                        showFavorite()
-                    }
-                }
-            }
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-
-            }
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-                when (favorite_navigation_switch.selectedTabPosition) {
-                    0 -> {
-                        recyclerView_favorite_matches.visibility = View.VISIBLE
-                        recyclerView_favorite_teams.visibility = View.GONE
-                        showFavorite()
-                    }
-                    1 -> {
-                        recyclerView_favorite_matches.visibility = View.GONE
-                        recyclerView_favorite_teams.visibility = View.VISIBLE
-                        showFavorite()
-                    }
-                }
-            }
-        })
+//        matches_navigation.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
+//            override fun onTabSelected(tab: TabLayout.Tab?) {
+//                when (matches_navigation.selectedTabPosition) {
+//                    0 -> {
+//                        recyclerView_previous_match.visibility = View.VISIBLE
+//                        recyclerView_next_match.visibility = View.GONE
+//                        fetchJson(ApiRepository())
+//                    }
+//                    1 -> {
+//                        recyclerView_previous_match.visibility = View.GONE
+//                        recyclerView_next_match.visibility = View.VISIBLE
+//                        fetchJson(ApiRepository())
+//                    }
+//                }
+//            }
+//            override fun onTabUnselected(tab: TabLayout.Tab?) {
+//
+//            }
+//            override fun onTabReselected(tab: TabLayout.Tab?) {
+//                when (matches_navigation.selectedTabPosition) {
+//                    0 -> {
+//                        recyclerView_previous_match.visibility = View.VISIBLE
+//                        recyclerView_next_match.visibility = View.GONE
+//                        fetchJson(ApiRepository())
+//                    }
+//                    1 -> {
+//                        recyclerView_previous_match.visibility = View.GONE
+//                        recyclerView_next_match.visibility = View.VISIBLE
+//                        fetchJson(ApiRepository())
+//                    }
+//                }
+//            }
+//        })
+//        favorite_navigation_switch.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
+//            override fun onTabSelected(tab: TabLayout.Tab?) {
+//                when (favorite_navigation_switch.selectedTabPosition) {
+//                    0 -> {
+//                        recyclerView_favorite_matches.visibility = View.VISIBLE
+//                        recyclerView_favorite_teams.visibility = View.GONE
+//                        showFavorite()
+//                    }
+//                    1 -> {
+//                        recyclerView_favorite_matches.visibility = View.GONE
+//                        recyclerView_favorite_teams.visibility = View.VISIBLE
+//                        showFavorite()
+//                    }
+//                }
+//            }
+//            override fun onTabUnselected(tab: TabLayout.Tab?) {
+//
+//            }
+//            override fun onTabReselected(tab: TabLayout.Tab?) {
+//                when (favorite_navigation_switch.selectedTabPosition) {
+//                    0 -> {
+//                        recyclerView_favorite_matches.visibility = View.VISIBLE
+//                        recyclerView_favorite_teams.visibility = View.GONE
+//                        showFavorite()
+//                    }
+//                    1 -> {
+//                        recyclerView_favorite_matches.visibility = View.GONE
+//                        recyclerView_favorite_teams.visibility = View.VISIBLE
+//                        showFavorite()
+//                    }
+//                }
+//            }
+//        })
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
     private fun showFavorite(){
-        database.use {
-            val result = select(FavoriteEvent.TABLE_FAVORITE_EVENT)
-            val favorite = result.parseList(classParser<FavoriteEvent>())
-            favoriteEvent.clear()
-            favoriteEvent.addAll(favorite)
-            adapterFavoriteEvents.notifyDataSetChanged()
-            recyclerView_favorite_matches.adapter = adapterFavoriteEvents
-        }
+//        database.use {
+//            val result = select(FavoriteEvent.TABLE_FAVORITE_EVENT)
+//            val favorite = result.parseList(classParser<FavoriteEvent>())
+//            favoriteEvent.clear()
+//            favoriteEvent.addAll(favorite)
+//            adapterFavoriteEvents.notifyDataSetChanged()
+//            recyclerView_favorite_matches.adapter = adapterFavoriteEvents
+//        }
         database.use{
             val result = select(FavoriteTeam.TABLE_FAVORITE_TEAM)
             val favorite = result.parseList(classParser<FavoriteTeam>())
@@ -251,34 +251,34 @@ class MainActivity : AppCompatActivity(){
         val request3 = Request.Builder().url(getTeamList(leagueName)).build()
         val client = OkHttpClient()
 
-        client.newCall(request).enqueue(object: Callback {
-            override fun onResponse(call: Call?, response: Response?){
-                val gson = GsonBuilder().create()
-                val prevMatch = gson.fromJson(apiRepository
-                        .doRequest(TheSportDBApi.getMatchPast(id)),
-                        PrevMatch::class.java)
-
-                runOnUiThread {
-                    recyclerView_previous_match.adapter = PreviousMatchAdapter(prevMatch)
-                }
-            }
-            override fun onFailure(call: Call?, e: IOException?){
-                println("failed request")
-            }
-        })
-
-        client.newCall(request2).enqueue(object: Callback{
-            override fun onResponse(call: Call?, response: Response?){
-                val gson = GsonBuilder().create()
-                val nextMatch = gson.fromJson(apiRepository
-                        .doRequest(TheSportDBApi.getMatchNext(id)),
-                        NextMatch::class.java)
-                runOnUiThread { recyclerView_next_match.adapter = NextMatchAdapter(nextMatch) }
-            }
-            override fun onFailure(call: Call?, e: IOException?){
-                println("failed request")
-            }
-        })
+//        client.newCall(request).enqueue(object: Callback {
+//            override fun onResponse(call: Call?, response: Response?){
+//                val gson = GsonBuilder().create()
+//                val prevMatch = gson.fromJson(apiRepository
+//                        .doRequest(TheSportDBApi.getMatchPast(id)),
+//                        PrevMatch::class.java)
+//
+//                runOnUiThread {
+//                    recyclerView_previous_match.adapter = PreviousMatchAdapter(prevMatch)
+//                }
+//            }
+//            override fun onFailure(call: Call?, e: IOException?){
+//                println("failed request")
+//            }
+//        })
+//
+//        client.newCall(request2).enqueue(object: Callback{
+//            override fun onResponse(call: Call?, response: Response?){
+//                val gson = GsonBuilder().create()
+//                val nextMatch = gson.fromJson(apiRepository
+//                        .doRequest(TheSportDBApi.getMatchNext(id)),
+//                        NextMatch::class.java)
+//                runOnUiThread { recyclerView_next_match.adapter = NextMatchAdapter(nextMatch) }
+//            }
+//            override fun onFailure(call: Call?, e: IOException?){
+//                println("failed request")
+//            }
+//        })
 
         client.newCall(request3).enqueue(object: Callback {
             override fun onResponse(call: Call?, response: Response?){
